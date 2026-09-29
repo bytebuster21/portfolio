@@ -176,7 +176,8 @@ nav .nav-resume-btn:hover {
 }
 
 .hero-section .text {
-  flex: 1.2;
+  flex: 1;
+  width: 100%;
 }
 
 .hero-badge-top {
