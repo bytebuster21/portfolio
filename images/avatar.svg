@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c63ff" />
+      <stop offset="100%" stop-color="#48cfad" />
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fcd34d" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c63ff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#48cfad" stop-opacity="0" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="200" cy="200" r="195" fill="url(#bgGrad)" stroke="url(#accentGrad)" stroke-width="4" />
+
+  <!-- Ambient Glow Ring -->
+  <circle cx="200" cy="200" r="185" fill="none" stroke="url(#glowGrad)" stroke-width="2" filter="url(#glow)" opacity="0.6" />
+
+  <!-- Decorative Tech Circuit / DNA strands in background -->
+  <g opacity="0.25" stroke="#48cfad" stroke-width="2" fill="none">
+    <path d="M 60 140 Q 120 100, 180 140 T 300 140" />
+    <path d="M 60 180 Q 120 220, 180 180 T 300 180" />
+    <line x1="90" y1="125" x2="90" y2="195" stroke-dasharray="3,3" />
+    <line x1="150" y1="125" x2="150" y2="195" stroke-dasharray="3,3" />
+    <line x1="210" y1="125" x2="210" y2="195" stroke-dasharray="3,3" />
+    <line x1="270" y1="125" x2="270" y2="195" stroke-dasharray="3,3" />
+    <!-- Binary / Tech Nodes -->
+    <circle cx="90" cy="125" r="4" fill="#6c63ff" />
+    <circle cx="150" cy="195" r="4" fill="#48cfad" />
+    <circle cx="210" cy="125" r="4" fill="#6c63ff" />
+    <circle cx="270" cy="195" r="4" fill="#48cfad" />
+  </g>
+
+  <!-- Person Avatar Graphic -->
+  <g transform="translate(0, 15)">
+    <!-- Clothing / Blazer -->
+    <path d="M 110 350 C 120 280, 150 250, 200 250 C 250 250, 280 280, 290 350 Z" fill="#1e1b4b" />
+    <path d="M 125 350 C 135 295, 160 265, 200 265 C 240 265, 265 295, 275 350 Z" fill="#2e1065" />
+    <path d="M 170 265 L 200 320 L 230 265 Z" fill="#ffffff" />
+    <path d="M 195 265 L 200 320 L 205 265 Z" fill="#6c63ff" />
+
+    <!-- Neck -->
+    <rect x="182" y="210" width="36" height="40" rx="8" fill="#e0a96d" />
+
+    <!-- Face / Head -->
+    <ellipse cx="200" cy="175" rx="52" ry="62" fill="#f0be86" />
+
+    <!-- Hair (Stylish shoulder-length dark hairstyle) -->
+    <path d="M 148 165 C 145 110, 180 90, 200 90 C 220 90, 255 110, 252 165 C 255 195, 262 230, 260 250 C 252 245, 248 220, 245 200 C 240 135, 235 120, 200 120 C 165 120, 160 135, 155 200 C 152 220, 148 245, 140 250 C 138 230, 145 195, 148 165 Z" fill="#18181b" />
+    <!-- Front bangs / side sweep -->
+    <path d="M 152 145 C 165 120, 195 118, 225 128 C 245 135, 250 150, 248 165 C 240 145, 220 132, 200 132 C 178 132, 162 140, 152 145 Z" fill="#27272a" />
+
+    <!-- Glasses (smart modern thin frame) -->
+    <rect x="162" y="160" width="32" height="22" rx="6" fill="none" stroke="#6c63ff" stroke-width="2.5" />
+    <rect x="206" y="160" width="32" height="22" rx="6" fill="none" stroke="#6c63ff" stroke-width="2.5" />
+    <line x1="194" y1="170" x2="206" y2="170" stroke="#6c63ff" stroke-width="2.5" />
+
+    <!-- Eyes inside glasses -->
+    <circle cx="178" cy="171" r="3.5" fill="#27272a" />
+    <circle cx="222" cy="171" r="3.5" fill="#27272a" />
+    <circle cx="179.5" cy="169.5" r="1" fill="#ffffff" />
+    <circle cx="223.5" cy="169.5" r="1" fill="#ffffff" />
+
+    <!-- Eyebrows -->
+    <path d="M 164 153 Q 178 150, 192 154" fill="none" stroke="#27272a" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M 208 154 Q 222 150, 236 153" fill="none" stroke="#27272a" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Smile -->
+    <path d="M 188 205 Q 200 216, 212 205" fill="none" stroke="#b45309" stroke-width="2.5" stroke-linecap="round" />
+    <!-- Cheeks blush -->
+    <ellipse cx="168" cy="192" rx="6" ry="3.5" fill="#f43f5e" opacity="0.3" />
+    <ellipse cx="232" cy="192" rx="6" ry="3.5" fill="#f43f5e" opacity="0.3" />
+  </g>
+
+  <!-- Floating Badge: CSE & Bioinformatics -->
+  <g transform="translate(245, 270)">
+    <rect width="130" height="42" rx="21" fill="rgba(26, 23, 48, 0.95)" stroke="url(#accentGrad)" stroke-width="2" />
+    <circle cx="21" cy="21" r="12" fill="#48cfad" />
+    <!-- DNA / Code Icon -->
+    <path d="M 16 21 L 21 16 L 26 21 L 21 26 Z" fill="#0f172a" />
+    <text x="40" y="25" fill="#f0f2ff" font-family="'Poppins', sans-serif" font-size="12" font-weight="600">Bioinformatics</text>
+  </g>
+
+  <!-- Floating Badge: Full-Stack / SDE -->
+  <g transform="translate(25, 270)">
+    <rect width="115" height="42" rx="21" fill="rgba(26, 23, 48, 0.95)" stroke="url(#accentGrad)" stroke-width="2" />
+    <circle cx="21" cy="21" r="12" fill="#6c63ff" />
+    <!-- Terminal prompt icon -->
+    <text x="17" y="25" fill="#ffffff" font-family="monospace" font-size="13" font-weight="bold">&gt;_</text>
+    <text x="40" y="25" fill="#f0f2ff" font-family="'Poppins', sans-serif" font-size="12" font-weight="600">SDE Intern</text>
+  </g>
+</svg>
