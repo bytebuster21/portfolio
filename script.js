@@ -154,4 +154,16 @@ document.addEventListener('DOMContentLoaded', () => {
       contactForm.reset();
     });
   }
+
+  // ── 7. Resume Button Click Handler ──────────────────────
+  document.querySelectorAll('a[href*="resume"], .nav-resume-btn').forEach(btn => {
+    btn.setAttribute('href', 'resume.pdf');
+    btn.setAttribute('target', '_blank');
+    btn.setAttribute('rel', 'noopener noreferrer');
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      window.open('resume.pdf', '_blank');
+    });
+  });
 });
